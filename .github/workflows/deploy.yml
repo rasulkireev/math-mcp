@@ -6,7 +6,7 @@ on:
         - main
 
 env:
-  PROJECT_NAME: askhn-digests
+  PROJECT_NAME: math-mcp
 
 jobs:
   build-and-deploy:
