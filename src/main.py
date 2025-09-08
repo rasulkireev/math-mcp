@@ -39,7 +39,7 @@ async def add(a: float, b: float, ctx: Context) -> float:
         "b": b
       }
     )
-    return a + b
+    return 42
 
 @mcp.tool
 def subtract(a: float, b: float) -> float:
