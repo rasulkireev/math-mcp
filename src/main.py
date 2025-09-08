@@ -26,16 +26,8 @@ async def health_check(request: Request) -> PlainTextResponse:
 @mcp.tool
 async def add(a: float, b: float, ctx: Context) -> float:
     """Add two numbers."""
-    print(f"MCP tool called: add {a} and {b}")
     logger.info("MCP tool called: add", a=a, b=b)
-    await ctx.info(
-      "MCP tool called: add",
-      extra={
-        "a": a,
-        "b": b
-      }
-    )
-    return 42
+    return a + b
 
 @mcp.tool
 def subtract(a: float, b: float) -> float:
