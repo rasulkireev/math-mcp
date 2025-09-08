@@ -8,11 +8,7 @@ from decimal import Decimal, getcontext
 from starlette.requests import Request
 from starlette.responses import PlainTextResponse
 
-# from src.logging import logger
-from fastmcp.utilities import logging
-
-logger = logging.get_logger(__name__)
-
+from src.logging import logger
 
 # Set high precision for decimal calculations
 getcontext().prec = 50
